@@ -31,10 +31,19 @@ img{display:block}
 .simple-page h1{font-size:16px;margin:0 0 48px;font-weight:600}
 .about-layout{display:grid;grid-template-columns:1fr 1fr;gap:7vw}
 .about-layout img{width:100%;height:auto;filter:grayscale(100%)}
+.about-page{max-width:none}
+.about-intro{display:grid;grid-template-columns:1fr 1fr;gap:7vw;max-width:1180px}
+.about-intro figure{margin:0}
+.about-intro img{width:100%;height:auto;filter:grayscale(100%)}
 .about-copy{max-width:620px;font-size:19px;line-height:1.5}
 .about-copy p{margin:0 0 1.4em}
+.about-section{margin-top:96px;max-width:1180px}
+.about-section h2{font-size:16px;font-weight:600;margin:0 0 24px}
 .cv-list{list-style:none;margin:0;padding:0;max-width:900px}
 .cv-list li{display:grid;grid-template-columns:120px 1fr;border-top:1px solid #ccc;padding:13px 0;font-size:15px}
+.tools-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px 20px;list-style:none;margin:0;padding:0}
+.tools-grid li{display:flex;align-items:center;gap:12px;font-size:14px}
+.tool-icon{width:50px;height:50px;border:1px solid #111;border-radius:12px;display:grid;place-items:center;font-size:16px;font-weight:600;letter-spacing:-.03em}
 .contact-link{font-size:clamp(32px,6vw,88px);letter-spacing:-.055em;border-bottom:2px solid}
 .project-main{padding:35px var(--pad) 80px}
 .project-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);margin-bottom:70px}
@@ -60,9 +69,12 @@ img{display:block}
 .work-grid{grid-template-columns:1fr;gap:20px}
 .page-main{padding-top:12px}
 .work-label{opacity:1;align-items:flex-end;justify-content:flex-start;text-align:left;color:#fff;background:linear-gradient(transparent 60%,rgba(0,0,0,.6));padding:18px}
-.about-layout,.project-head{grid-template-columns:1fr}
+.about-layout,.about-intro,.project-head{grid-template-columns:1fr}
 .about-layout figure{margin:0}
 .about-copy{font-size:17px}
+.about-section{margin-top:65px}
+.tools-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}
+.tool-icon{width:44px;height:44px;border-radius:10px}
 .cv-list li{grid-template-columns:78px 1fr}
 .project-head{margin-bottom:35px}
 .project-main{padding-top:15px}
