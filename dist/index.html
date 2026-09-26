@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Nai Yidan — interaction, industrial and critical design.">
+  <meta name="theme-color" content="#05070b">
+  <title>Nai Yidan — Designer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#works">Skip to projects</a>
+  <header class="site-header" data-header>
+    <a class="wordmark" href="#home" aria-label="Nai Yidan, home">NAI YIDAN</a>
+    <nav aria-label="Primary navigation">
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <img src="./assets/space-junk-gallery.webp" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-scrim"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Critical Interaction Design · 2025</p>
+        <h1 id="hero-title">SPACE JUNK<br>DIALYSIS</h1>
+        <p class="hero-note">A speculative dialysis machine that turns orbital pollution into a bodily encounter.</p>
+        <button class="text-button light" type="button" data-open="space-junk">View project <span aria-hidden="true">↘</span></button>
+      </div>
+      <p class="scroll-cue" aria-hidden="true">Scroll to explore</p>
+    </section>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="section-index">01 / Practice</p>
+      <h2 id="intro-title">I create embodied experiences where technology becomes a medium for empathy, critique and public reflection.</h2>
+      <p>Working across interactive systems, wearables and digital fabrication, I translate complex social questions into experiences people can see, hear and feel.</p>
+    </section>
+
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="section-heading">
+        <p class="section-index">02 / Selected Works</p>
+        <h2 id="works-title">Projects</h2>
+      </div>
+      <div class="work-grid">
+        <button class="project-card project-card--wide" type="button" data-open="space-junk">
+          <span class="project-image"><img src="./assets/space-junk-cover.webp" alt="SPACE JUNK DIALYSIS wearable installation in electric blue light" loading="lazy"></span>
+          <span class="project-meta"><strong>SPACE JUNK DIALYSIS</strong><span>Critical Design · 2025</span></span>
+        </button>
+        <button class="project-card" type="button" data-open="labour-tower">
+          <span class="project-image"><img src="./assets/labour-cover.webp" alt="Labour Tower interactive kinetic sculpture" loading="lazy"></span>
+          <span class="project-meta"><strong>LABOUR TOWER</strong><span>Interactive Installation · 2025</span></span>
+        </button>
+        <article class="project-card">
+          <span class="project-image"><img src="./assets/braille-cover.webp" alt="Braille Calligraphy tactile artwork" loading="lazy"></span>
+          <span class="project-meta"><strong>BRAILLE CALLIGRAPHY</strong><span>Inclusive Interaction · 2024</span></span>
+        </article>
+        <article class="project-card project-card--wide">
+          <span class="project-image"><img src="./assets/robin-cover.webp" alt="ROBIN garden robot and companion app" loading="lazy"></span>
+          <span class="project-meta"><strong>ROBIN</strong><span>AI Product System · 2026</span></span>
+        </article>
+        <article class="project-card">
+          <span class="project-image"><img src="./assets/oriva-cover.webp" alt="ORIVA water rescue craft" loading="lazy"></span>
+          <span class="project-meta"><strong>ORIVA</strong><span>Rescue Mobility · 2025</span></span>
+        </article>
+        <article class="project-card">
+          <span class="project-image"><img src="./assets/soma-cover.webp" alt="SOMA ergonomic office chair" loading="lazy"></span>
+          <span class="project-meta"><strong>SOMA</strong><span>Ergonomic Product · 2025</span></span>
+        </article>
+        <article class="project-card project-card--wide">
+          <span class="project-image"><img src="./assets/hexa-cover.webp" alt="HEXA-S adaptive smart textile care system" loading="lazy"></span>
+          <span class="project-meta"><strong>HEXA-S</strong><span>Wearable Healthcare · 2025</span></span>
+        </article>
+        <article class="project-card">
+          <span class="project-image"><img src="./assets/alzheimer-cover.webp" alt="Alzheimer motion monitoring garment" loading="lazy"></span>
+          <span class="project-meta"><strong>ALZHEIMER MOTION MONITOR</strong><span>Care Technology · 2024</span></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-copy">
+        <p class="section-index">03 / About</p>
+        <h2 id="about-title">Technology should amplify our humanity, not ask us to adapt to the machine.</h2>
+        <p>I am a designer and maker working with Arduino, sensors, sound, light, 3D printing and ergonomic prototyping. My practice moves between care-focused products and critical narratives about the systems shaping everyday life.</p>
+        <p>Currently based in London and studying MA Design for Industry 5.0 at University of the Arts London.</p>
+      </div>
+      <figure><img src="./assets/portrait.webp" alt="Portrait of Nai Yidan" loading="lazy"></figure>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p class="section-index">04 / Contact</p>
+    <p class="footer-call">For collaborations, exhibitions<br>and new conversations.</p>
+    <a class="footer-link" href="mailto:hello@naiyidan.com">hello@naiyidan.com <span aria-hidden="true">↗</span></a>
+    <div class="footer-bottom"><span>London, UK</span><span>© 2026 Nai Yidan</span></div>
+  </footer>
+
+  <dialog class="project-dialog" data-dialog>
+    <button class="dialog-close" type="button" data-close aria-label="Close project">Close ×</button>
+    <article data-project="space-junk">
+      <div class="dialog-title"><p>Critical Interaction Design · 2025</p><h2>SPACE JUNK<br>DIALYSIS</h2></div>
+      <img src="./assets/space-junk-gallery.webp" alt="SPACE JUNK DIALYSIS installation and interaction views">
+      <div class="project-copy"><h3>Making an invisible cost bodily.</h3><p>SPACE JUNK DIALYSIS imagines a near future in which the metallic residue of orbital debris has entered the atmosphere and the bloodstream. A fictional dialysis apparatus filters these particles from the body, transforming a planetary-scale issue into an intimate encounter.</p><p>Airflow sensing and a TouchDesigner interface connect the visitor’s gestures to the apparatus. Light, sound and moving fluid build a clinical yet theatrical experience: the audience is not shown a statistic, but placed inside its possible consequence.</p><dl><div><dt>Role</dt><dd>Concept, interaction, prototyping, visual direction</dd></div><div><dt>Tools</dt><dd>Arduino, airflow sensors, TouchDesigner, 3D printing</dd></div></dl></div>
+      <img src="./assets/space-junk-research.webp" alt="Research into orbital debris and public health">
+      <img src="./assets/space-junk-concept.webp" alt="Storyboard, device concept and form development">
+      <img src="./assets/space-junk-interaction.webp" alt="Installation structure and interaction system">
+    </article>
+    <article data-project="labour-tower">
+      <div class="dialog-title"><p>Interactive Installation · 2025</p><h2>LABOUR<br>TOWER</h2></div>
+      <img src="./assets/labour-gallery.webp" alt="Labour Tower installation and audience interaction">
+      <div class="project-copy"><h3>A monument powered by invisible labour.</h3><p>LABOUR TOWER is an interactive kinetic sculpture about the human cost concealed beneath digital economies. Visitors feed the tower with coins representing units of labour. As participation increases, the tower glows brighter and its sound becomes more distorted.</p><p>The work mirrors our complicity in systems that consume individual time and energy to sustain an image of frictionless technological prosperity.</p><dl><div><dt>Role</dt><dd>Concept, form, electronics, interaction</dd></div><div><dt>Tools</dt><dd>Arduino, motors, light, sound, digital fabrication</dd></div></dl></div>
+    </article>
+  </dialog>
+  <script src="./app.js"></script>
+</body>
+</html>
