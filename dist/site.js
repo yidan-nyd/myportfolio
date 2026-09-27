@@ -60,6 +60,7 @@
 
   const languageButtons = [...document.querySelectorAll("[data-language]")];
   const localizableElements = [...document.querySelectorAll("[data-en][data-zh]")];
+  const themeButton = document.querySelector("[data-theme-toggle]");
 
   const setLanguage = (language) => {
     const selected = language === "zh" ? "zh" : "en";
@@ -93,4 +94,32 @@
     button.addEventListener("click", () => setLanguage(button.dataset.language));
   });
   setLanguage(savedLanguage);
+
+  const setTheme = (theme) => {
+    const selected = theme === "light" ? "light" : "dark";
+    document.documentElement.dataset.theme = selected;
+    if (themeButton) {
+      const nextTheme = selected === "dark" ? "light" : "dark";
+      themeButton.setAttribute("aria-label", `Switch to ${nextTheme} theme`);
+      themeButton.setAttribute("title", `Switch to ${nextTheme} theme`);
+      themeButton.setAttribute("aria-pressed", String(selected === "light"));
+    }
+    try {
+      window.localStorage.setItem("yidan-theme", selected);
+    } catch (_) {
+      // Theme still works when storage is unavailable.
+    }
+  };
+
+  let savedTheme = "dark";
+  try {
+    savedTheme = window.localStorage.getItem("yidan-theme") || "dark";
+  } catch (_) {
+    // Use the default dark theme when storage is unavailable.
+  }
+
+  themeButton?.addEventListener("click", () => {
+    setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
+  });
+  setTheme(savedTheme);
 })();
