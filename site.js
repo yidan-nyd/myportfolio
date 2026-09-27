@@ -122,4 +122,21 @@
     setTheme(document.documentElement.dataset.theme === "light" ? "dark" : "light");
   });
   setTheme(savedTheme);
+
+  document.querySelectorAll(".work-card").forEach((card) => {
+    const destination = card.querySelector(".work-open")?.getAttribute("href");
+    if (!destination) return;
+    card.tabIndex = 0;
+    card.setAttribute("role", "link");
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("a")) return;
+      window.location.assign(destination);
+    });
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        window.location.assign(destination);
+      }
+    });
+  });
 })();
