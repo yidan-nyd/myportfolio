@@ -7,7 +7,8 @@ a{color:inherit;text-decoration:none}
 img{display:block}
 .masthead{height:var(--header);padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;position:relative;z-index:20}
 .masthead--overlay{position:absolute;left:0;right:0;top:0;color:#fff}
-.brand{font-size:18px;font-weight:700;letter-spacing:-.02em}
+.brand{display:block;width:138px;line-height:0}
+.brand img{display:block;width:100%;height:auto}
 .masthead nav{display:flex;gap:36px}
 .masthead nav a{font-size:16px}
 .masthead nav a[aria-current=page]{color:#888}
@@ -59,11 +60,16 @@ img{display:block}
 .project-gallery{display:grid;gap:20px}
 .project-gallery img{width:100%;height:auto}
 .site-footer{padding:60px var(--pad) 25px;font-size:12px}
+.language-switch{position:fixed;right:var(--pad);bottom:24px;z-index:30;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.9);padding:4px 0}
+.language-switch button{appearance:none;border:0;background:none;color:inherit;font:inherit;padding:3px 0;cursor:pointer;opacity:.42}
+.language-switch button+button::before{content:"/";display:inline-block;margin-right:8px;opacity:.7}
+.language-switch button.is-active{opacity:1}
+.language-switch button:focus-visible{outline:1px solid currentColor;outline-offset:4px}
 @media(max-width:760px){:root{--pad:20px;--header:105px}
 .masthead{align-items:flex-start;padding-top:24px}
 .masthead nav{gap:13px;flex-wrap:wrap;justify-content:flex-end;max-width:230px}
 .masthead nav a{font-size:13px}
-.brand{font-size:15px}
+.brand{width:112px}
 .home-caption{bottom:50px;display:block}
 .home-caption h1{font-size:14px}
 .home-caption span{font-size:12px}
