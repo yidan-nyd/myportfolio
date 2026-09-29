@@ -168,10 +168,11 @@ a.contact-item:hover{background:var(--hover)}
 .feature-copy blockquote{margin-top:48px;color:var(--ink);font-size:20px}
 .feature-visual{margin:0}
 .feature-visual img{width:100%;background:#f4f4f1;border:1px solid var(--line)}
-.github-link{display:flex;align-items:center;gap:9px;padding:10px 13px;border:1px solid var(--line);transition:border-color .2s ease,background .2s ease}
-.github-link:hover{border-color:var(--robin);background:var(--robin-soft)}
-.github-link svg{width:18px;height:18px;fill:currentColor}
-.github-link span{font:600 10px/1 "SFMono-Regular",Consolas,monospace;letter-spacing:.08em}
+.github-link{display:flex;align-items:center;gap:13px;min-width:210px;padding:14px 18px;border:1px solid var(--robin);background:var(--robin);color:#0b0d08;box-shadow:0 0 0 0 var(--robin-soft);transition:transform .2s ease,box-shadow .2s ease}
+.github-link:hover{transform:translateY(-3px);box-shadow:0 8px 0 var(--robin-soft)}
+.github-link svg{flex:0 0 auto;width:24px;height:24px;fill:currentColor}
+.github-link span{display:flex;flex-direction:column;gap:5px;font-family:"SFMono-Regular",Consolas,monospace;letter-spacing:.06em}
+.github-link b{font-size:12px;line-height:1;font-weight:800}.github-link small{font-size:8px;line-height:1;font-weight:700;opacity:.7}
 .ai-module{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(42px,7vw,110px);align-items:start;padding:0 0 clamp(90px,10vw,150px)}
 .ai-module:last-child{padding-bottom:0}
 .ai-module-reverse .ai-copy{order:2}.ai-module-reverse figure{order:1}
